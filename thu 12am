@@ -93,6 +93,96 @@ body{
   color:#555;
   border-top:1px solid #eee;
 }
+  /* ===== TELEGRAM CARD ===== */
+    .telegram-card {
+      background: linear-gradient(135deg, var(--primary) 0%, #2aad83 100%);
+      color: var(--white);
+      padding: 32px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .telegram-logo-wrapper {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.18);
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+    }
+
+    .telegram-logo {
+      width: 32px;
+      height: 32px;
+    }
+
+    .telegram-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 8px;
+    }
+    
+    .telegram-subtitle {
+      font-size: 16px;
+      opacity: 0.95;
+      margin: 0 0 24px;
+    }
+
+    .btn {
+      appearance: none; 
+      border: none; 
+      outline: none; 
+      cursor: pointer;
+      display: inline-flex; 
+      align-items: center; 
+      gap: 8px;
+      padding: 14px 24px; 
+      border-radius: 12px;
+      background: var(--dark-green); 
+      color: var(--white); 
+      font-weight: 700; 
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(44, 79, 55, 0.2);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover { 
+      transform: translateY(-2px); 
+      box-shadow: 0 8px 16px rgba(44, 79, 55, 0.3); 
+    }
+
+    .btn .tg-icon { 
+      width: 18px; 
+      height: 18px; 
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-weight: 700;
+      color: #555;
+      border-top: 1px solid #e6ede5;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .footer a:hover {
+      color: var(--primary-dark);
+    }
+
 </style>
 </head>
 
@@ -177,6 +267,38 @@ body{
     </li>
   </ul>
 </div>
+    <!-- ✅ بطاقة التليغرام -->
+    <div class="telegram-card">
+      <div class="telegram-logo-wrapper">
+        <svg class="telegram-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.036 15.08l-.375 5.283c.537 0 .77-.231 1.048-.508l2.517-2.42 5.217 3.82c.957.528 1.63.25 1.89-.884l-3.426-16.02h.001c.304-1.418-.512-1.972-1.448-1.626L1.12 9.247C-.25 9.778-.229 10.55.886 10.9l5.31 1.658L19.42 5.54c.618-.406 1.18-.182.717.224L9.036 15.08z" fill="#fff"/>
+        </svg>
+      </div>
+      <h3 class="telegram-title">انضم لقناة «كابتن ناقل» على تليغرام</h3>
+      <p class="telegram-subtitle">كل التحديثات، التنبيهات، والمكافآت اليومية في مكان واحد.</p>
+      <a class="btn" href="https://t.me/naqeliraq" target="_blank" rel="noopener noreferrer">
+        <svg class="tg-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.036 15.08l-.375 5.283c.537 0 .77-.231 1.048-.508l2.517-2.42 5.217 3.82c.957.528 1.63.25 1.89-.884l3.426-16.02h.001c.304-1.418-.512-1.972-1.448-1.626L1.12 9.247C-.25 9.778-.229 10.55.886 10.9l5.31 1.658L19.42 5.54c.618-.406 1.18-.182.717.224L9.036 15.08z" fill="#fff"/>
+        </svg>
+        انضم الآن إلى القناة
+      </a>
+    </div>
+
+    <!-- ✅ الشروط -->
+    <div class="card conditions">
+      <div class="card-title"><i class="fas fa-info-circle"></i> شروط الحصول على المكافآت</div>
+      <ul class="conditions-list">
+        <li class="condition-item">
+          <i class="fas fa-check-circle"></i> يجب أخذ الرحلات خلال الوقت المحدد.
+        </li>
+        <li class="condition-item">
+          <i class="fas fa-check-circle"></i> تُحسب المكافأة بناءً على وقت بداية الرحلة.
+        </li>
+        <li class="condition-item">
+          <i class="fas fa-check-circle"></i> تُضاف المكافأة خلال ٤٨ ساعة إلى محفظة ناقل.
+        </li>
+      </ul>
+    </div>
 
 <div class="footer">
   استخدم تطبيق ناقل وابدأ رحلتك | © 2025
